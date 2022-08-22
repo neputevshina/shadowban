@@ -35,3 +35,14 @@ X.X.X.X via 192.168.1.1 dev wlan0 metric 5
 ```
 - Take an address after “via” in line where X.X.X.X is address of last connected proxy.
 - `sudo ip route change default via 192.168.1.1`
+
+## Credits
+[outline-go-tun2socks](https://github.com/Jigsaw-Code/outline-go-tun2socks)
+
+[go-gtk](https://github.com/mattn/go-gtk)
+
+[fsnotify](https://github.com/fsnotify/fsnotify)
+
+Project V's [geoip distribution](https://github.com/v2fly/geoip) (unused)
+
+This product includes GeoLite2 data created by MaxMind, available from https://www.maxmind.com
