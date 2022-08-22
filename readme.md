@@ -2,7 +2,7 @@
 One-executable Shadowsocks/Outline client. 
 Embeds outline-go-tun2socks used by original Outline client.
 
-![Shadowban screenshot](screenshot.png)
+![Shadowban screenshot](./screenshot.png)
 
 ## Bugs
 - Can't run from sudo. Must be executed as a normal user and then elevated to root.
