@@ -6,14 +6,16 @@ Embeds outline-go-tun2socks used by original Outline client.
 
 ## Bugs
 - Can't run from sudo. Must be executed as a normal user and then elevated to root.
-- Can't reconnect. This is a bug in go-2tunsocks that assumes that we disconnect killing the TUN process and never closes /dev/net/tun.
+- Can't reconnect. This is a bug in go-tun2socks that assumes that we disconnect killing the TUN process and never closes /dev/net/tun.
 - Can't write logs. Root side of Shadowban just don't write in Stdout set in user side.
 
 ## Todo
 - Refactor. I wrote this code mostly during nighttime.
 - Use geoip.dat to paint flags for proxies in menu.
-- Make interface actually be based on the state diagram (see [design.excalidraw.png]).
+- Make interface actually be based on the state diagram (see [design.excalidraw.png](./design.excalidraw.png)).
 - Change tray icon. Use icon to show connection state maybe?
+- Replace lwIP with pure Go TCP/IP stack. (minus one cgo dependency)
+- Add an option to restore connection after network change.
 
 ## Dependencies
 - go 1.18 (for building, no release before I fix everything)
